@@ -11,14 +11,22 @@ const contenido=(
 );
 function Componente({titulo, contenido}){
   
-  return( <div>
+  return(
+     <div>
     <div>
+      
        <h1>{titulo}</h1>
        <p>{contenido}</p>
        <textarea id="msg" name="user_message"></textarea>
        <br></br>
-     <button onClick="App()">Buscar</button>
+     
+     <button onClick={Mostrar}>Buscar</button>
      </div>
      </div>);
+}
+function Mostrar(){
+return(
+  <div>capital</div>
+);
 }
 ReactDOM.render(<App />, document.getElementById("root"));
